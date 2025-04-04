@@ -11,5 +11,5 @@ requests
 base64
 openpyxl
 time
-ssl
-certifi
+#ssl
+#certifi
