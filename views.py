@@ -14,12 +14,17 @@ from langchain_ollama import ChatOllama
 # Initialize ChatOllama (if needed)
 llm = ChatOllama(model='llama3', base_url='http://localhost:11434')
 
-# Load API Key from environment variable
-load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
-print(api_key)
+# # Load API Key from environment variable
+# load_dotenv()
+# api_key = os.getenv("OPENAI_API_KEY")
+# print(api_key)
+# client = OpenAI(api_key=api_key)
+# print(client)
+# Load API Key from Streamlit Secrets
+
+api_key = st.secrets["secret_section"]["OPENAI_API_KEY"]
+# Initialize OpenAI Client
 client = OpenAI(api_key=api_key)
-print(client)
 
 # Function to normalize text
 def normalize_text(text):
