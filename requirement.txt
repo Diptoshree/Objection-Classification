@@ -1,24 +1,15 @@
-# Django & DRF
 django
 djangorestframework
-
-# Environment Variables
 python-dotenv
-
-# OpenAI & LLMs
 openai
 langchain
 langchain_ollama
 ollama
-
-# Streamlit & UI Dependencies
 streamlit
 pandas
 requests
 base64
-
-# Excel Processing
 openpyxl
-
-# Additional Utilities
 time
+ssl
+certifi
